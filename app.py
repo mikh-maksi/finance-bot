@@ -20,9 +20,11 @@ async def echo(update, context):
 
     await update.message.reply_text(string_out)
 
-application = Application.builder().token("2034824924:AAFc0q0PYPezeZ6G5kE10uBWhWSurKks-8A").build()
+if __name__ == '__main__':
 
-application.add_handler(CommandHandler('income', income))
-application.add_handler(MessageHandler(filters.TEXT, echo))
+    application = Application.builder().token("2034824924:AAFc0q0PYPezeZ6G5kE10uBWhWSurKks-8A").build()
 
-application.run_polling()
+    application.add_handler(CommandHandler('income', income))
+    application.add_handler(MessageHandler(filters.TEXT, echo))
+
+    application.run_polling()
