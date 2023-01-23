@@ -6,6 +6,7 @@ async def income(update, context):
     string_in = update.message.text
     elements = string_in.split(' ')
     account = account + int(elements[1])
+    print(str(account))
     string_out = str(account)
     await update.message.reply_text(string_out)
 
