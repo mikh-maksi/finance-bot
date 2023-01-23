@@ -20,7 +20,7 @@ async def echo(update, context):
 
     await update.message.reply_text(string_out)
 
-def main():
+if __name__ == '__main__':
 
     application = Application.builder().token("2034824924:AAFc0q0PYPezeZ6G5kE10uBWhWSurKks-8A").build()
 
