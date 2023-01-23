@@ -20,7 +20,7 @@ async def echo(update, context):
 
     await update.message.reply_text(string_out)
 
-application = Application.builder().token("5722992818:AAGS0T-86JnKxqNJIqyebiHYPOzkWn5k5rM").build()
+application = Application.builder().token("5593169409:AAEgZq9VPtQd-_S_ki3SQm7GO0KNvXcZItc").build()
 
 application.add_handler(CommandHandler('income', income))
 application.add_handler(MessageHandler(filters.TEXT, echo))
